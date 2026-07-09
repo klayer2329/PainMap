@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>篮球运动员足踝伤病智能筛查系统</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="scoreboard">
+  <div class="sb-inner">
+    <div class="sb-logo">🏀 <span>足踝筛查</span></div>
+    <div id="quarterTrack" class="quarter-track">
+      <div class="q" data-q="0"><span class="q-label">Q1</span><span class="q-name">红旗排查</span></div>
+      <div class="q" data-q="1"><span class="q-label">Q2</span><span class="q-name">病史问卷</span></div>
+      <div class="q" data-q="2"><span class="q-label">Q3</span><span class="q-name">疼痛定位</span></div>
+      <div class="q" data-q="3"><span class="q-label">Q4</span><span class="q-name">功能测试</span></div>
+      <div class="q" data-q="4"><span class="q-label">FT</span><span class="q-name">结果报告</span></div>
+    </div>
+  </div>
+</div>
+
+<main id="app"></main>
+
+<footer id="appFooter">
+  <p>本工具仅用于初步风险筛查与自测引导，不构成正式医学诊断，不能替代医生检查或影像学检查。如有严重症状，请立即就医。</p>
+</footer>
+
+<script src="js/data/questions.js"></script>
+<script src="js/data/acuteConditions.js"></script>
+<script src="js/data/chronicConditions.js"></script>
+<script src="js/data/specialTests.js"></script>
+<script src="js/data/rehab.js"></script>
+<script src="js/engine/scoring.js"></script>
+<script src="js/painmap.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
